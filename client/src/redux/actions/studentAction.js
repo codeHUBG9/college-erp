@@ -90,8 +90,7 @@ const getMarksHelper = (data) => {
 export const studentLogin = (studentCredentials) => {
   return async (dispatch) => {
     try {
-      const { data } = await axios.post(
-        "http://localhost:5000/api/student/login",
+      const { data } = await axios.post("api/student/login",
         studentCredentials
       );
       const { token } = data;

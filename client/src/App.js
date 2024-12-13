@@ -80,7 +80,7 @@ if (window.localStorage.facultyToken) {
 function App() {
   const store = useSelector((store) => store);
   return (
-    <>
+    <> 
       <Router>
         <Routes>
           <Route exact path="/" element={<FacultyStudentLogin />} />
@@ -98,7 +98,7 @@ function App() {
           />
           <Route
             exact
-            path="/admin/add/students"
+            path="/admin/add/students" 
             element={<AdminAddStudent />}
           />
           <Route
